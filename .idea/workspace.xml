@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefdb3ab-b4e3-4515-a0cd-f8c595c4a8d7" name="Changes" comment="Added Main class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cefdb3ab-b4e3-4515-a0cd-f8c595c4a8d7" name="Changes" comment="Addded new classes">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scans/BPScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/BPScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scans/MRIScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/MRIScan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Scans/Scan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/Scan.java" afterDir="false" />
     </list>
@@ -21,6 +19,21 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +70,58 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Gradle.SEFBTestRepository [run]">
+    <configuration name="SEFBTestRepository [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SEFBTestRepository [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.SEFBTestRepository [run]" />
+        <item itemvalue="Gradle.SEFBTestRepository [build]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701121961145</updated>
       <workItem from="1701121962234" duration="31000" />
-      <workItem from="1701161184427" duration="3932000" />
+      <workItem from="1701161184427" duration="5370000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main class">
       <option name="closed" value="true" />
@@ -76,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701163511105</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Addded new classes">
+      <option name="closed" value="true" />
+      <created>1701167637232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701167637232</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Main class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Main class" />
+    <MESSAGE value="Addded new classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addded new classes" />
   </component>
 </project>

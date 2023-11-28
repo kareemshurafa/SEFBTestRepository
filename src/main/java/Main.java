@@ -5,14 +5,15 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 public class Main {
 
     public static void main(String [] args){
 
         // Initialise patients with name and age
-        Patient patient1 = new Patient("Daphne Von Oram", 62);
-        Patient patient2 = new Patient("Sebastian Compton", 31);
+        Patient patient1 = new Patient("Daphne Von Oram", 62, "https://martinh.netfirms.com/BIOE60010/DaphneVonOram.jpg");
+        Patient patient2 = new Patient("Sebastian Compton", 31, "https://martinh.netfirms.com/BIOE60010/SebastianCompton.jpg");
 
         // Add the scans
         patient1.addScan(new MRIScan(2023, 9, 14, "https://martinh.netfirms.com/BIOE60010/mri1.jpg",2));
@@ -29,7 +30,15 @@ public class Main {
 
 
 
+
         // Admin view
+        patient1.getAdminView();
+        patient2.getAdminView();
+
+
+
+
+
 
 
 

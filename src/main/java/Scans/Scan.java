@@ -20,4 +20,13 @@ public abstract class Scan {
     }
 
     public abstract String getScanDate();
+
+
+    public int getFieldStrength(){
+        return 0;
+    }
+
+    public String getDuration() {
+        return "";
+    }
 }
