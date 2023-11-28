@@ -2,6 +2,7 @@ import Scans.BPScan;
 import Scans.MRIScan;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -28,18 +29,48 @@ public class Main {
         JPanel displayPanel = new JPanel();
 
 
-        JLabel label = new JLabel();
-        URL imageURL= null;
+        JLabel label1 = new JLabel();
+        URL imageURL1= null;
         try {
-            imageURL = new URL(patient1.getPictureURL());
+            imageURL1 = new URL(patient1.getPictureURL());
         }
         catch (MalformedURLException e){
             System.out.println(e.getMessage());
         }
-        ImageIcon thisImageIcon = new ImageIcon(imageURL);
-        label.setIcon(thisImageIcon);
+        ImageIcon thisImageIcon1 = new ImageIcon(imageURL1);
+        label1.setIcon(thisImageIcon1);
 
+        JLabel label2 = new JLabel();
+        URL imageURL2= null;
+        try {
+            imageURL2 = new URL(patient2.getPictureURL());
+        }
+        catch (MalformedURLException e){
+            System.out.println(e.getMessage());
+        }
+        ImageIcon thisImageIcon2 = new ImageIcon(imageURL2);
+        label2.setIcon(thisImageIcon2);
 
+        displayPanel.setLayout(new GridLayout(2, 4));
+        displayPanel.add(label1);
+        displayPanel.add(label2);
+
+        JLabel textLabel1 = new JLabel("Name: "+ patient1.getPatientName() + "\n Age: "+ patient1.getPateintAge());
+        JLabel textLabel2 = new JLabel("Name: "+ patient2.getPatientName() + "\n Age: "+ patient2.getPateintAge());
+
+        displayPanel.add(textLabel1);
+        displayPanel.add(textLabel2);
+
+        JLabel MRILabel1;
+        JLabel MRILabel2;
+
+        frame.setContentPane(displayPanel);
+        frame.setVisible(true);
+        frame.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e){
+                frame.dispose();
+            }
+        });
 
 
 

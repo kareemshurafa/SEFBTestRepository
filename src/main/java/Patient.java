@@ -23,6 +23,14 @@ public class Patient {
         this.pictureURL = pictureURL;
     }
 
+    public String getPatientName(){
+        return this.name;
+    }
+
+    public int getPateintAge(){
+        return this.age;
+    }
+
     public void addScan(Scan scan){
         scans.add(scan);
     }
