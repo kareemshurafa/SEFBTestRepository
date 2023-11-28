@@ -1,2 +1,4 @@
-package Scans;public class MRIScan {
+package Scans;
+
+public class MRIScan {
 }

@@ -1,2 +1,4 @@
-package Scans;public class BPScan {
+package Scans;
+
+public class BPScan {
 }

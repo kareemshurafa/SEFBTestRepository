@@ -1,2 +1,4 @@
-package Scans;public class Scan {
+package Scans;
+
+public class Scan {
 }
