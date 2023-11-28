@@ -24,4 +24,8 @@ public class MRIScan extends Scan {
         return this.fieldstrength;
     }
 
+    public String getMRIURL(){
+        return this.imageURL;
+    }
+
 }

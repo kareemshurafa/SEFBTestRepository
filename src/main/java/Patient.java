@@ -35,14 +35,23 @@ public class Patient {
         scans.add(scan);
     }
 
+    public String getMRIURL(){
+        for (Scan sc:scans){
+            if (sc instanceof MRIScan){
+                return ((MRIScan) sc).getMRIURL();
+            }
+        }
+        return "";
+    }
+
     public void getAdminView() {
         for (Scan sc : scans) {
             if (sc instanceof MRIScan){
-                System.out.println("Patient: " + this.name + ": MRI: " + sc.getFieldStrength() + " Tesla, "
+                System.out.println("Patient: " + this.name + ": MRI: " + ((MRIScan) sc).getFieldStrength() + " Tesla, "
                         + sc.getScanDate());
             }
             else if (sc instanceof BPScan){
-                System.out.println("Patient: " + this.name + ": BP: " + sc.getDuration() + ", " + sc.getScanDate());
+                System.out.println("Patient: " + this.name + ": BP: " + ((BPScan) sc).getDuration() + ", " + sc.getScanDate());
             }
         }
 
