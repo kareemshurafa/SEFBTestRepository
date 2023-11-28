@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefdb3ab-b4e3-4515-a0cd-f8c595c4a8d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scans/BPScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scans/MRIScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scans/Scan.java" afterDir="false" />
+    <list default="true" id="cefdb3ab-b4e3-4515-a0cd-f8c595c4a8d7" name="Changes" comment="Added Main class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scans/BPScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/BPScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scans/MRIScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/MRIScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scans/Scan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Scans/Scan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +51,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,11 +66,24 @@
       <option name="presentableId" value="Default" />
       <updated>1701121961145</updated>
       <workItem from="1701121962234" duration="31000" />
-      <workItem from="1701161184427" duration="650000" />
+      <workItem from="1701161184427" duration="3932000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Main class">
+      <option name="closed" value="true" />
+      <created>1701163511105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701163511105</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Main class" />
   </component>
 </project>
