@@ -24,7 +24,7 @@ public class Main {
 
         // Window for Doctor Output
         JFrame frame = new JFrame("Doctor View");
-        frame.setSize(500,500);
+        frame.setSize(800,800);
 
         JPanel displayPanel = new JPanel();
 
@@ -51,9 +51,11 @@ public class Main {
         ImageIcon thisImageIcon2 = new ImageIcon(imageURL2);
         label2.setIcon(thisImageIcon2);
 
-        displayPanel.setLayout(new GridLayout(2, 4));
+        displayPanel.setLayout(new GridLayout(3, 4));
+
         displayPanel.add(label1);
         displayPanel.add(label2);
+
 
         JLabel textLabel1 = new JLabel("Name: "+ patient1.getPatientName() + "\n Age: "+ patient1.getPateintAge());
         JLabel textLabel2 = new JLabel("Name: "+ patient2.getPatientName() + "\n Age: "+ patient2.getPateintAge());
@@ -61,8 +63,34 @@ public class Main {
         displayPanel.add(textLabel1);
         displayPanel.add(textLabel2);
 
-        JLabel MRILabel1;
+        JLabel label3 = new JLabel();
+        URL imageURL3= null;
+        try {
+            imageURL3 = new URL(patient1.getMRIURL());
+        }
+        catch (MalformedURLException e){
+            System.out.println(e.getMessage());
+        }
+        ImageIcon thisImageIcon3 = new ImageIcon(imageURL3);
+        label3.setIcon(thisImageIcon3);
+
+        JLabel label4 = new JLabel();
+        URL imageURL4= null;
+        try {
+            imageURL4 = new URL(patient2.getMRIURL());
+        }
+        catch (MalformedURLException e){
+            System.out.println(e.getMessage());
+        }
+        ImageIcon thisImageIcon4 = new ImageIcon(imageURL4);
+        label4.setIcon(thisImageIcon4);
+
+        displayPanel.add(label3);
+        displayPanel.add(label4);
         JLabel MRILabel2;
+
+        JLabel BPLabel1;
+        JLabel BPLabel2;
 
         frame.setContentPane(displayPanel);
         frame.setVisible(true);
