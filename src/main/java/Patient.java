@@ -44,6 +44,24 @@ public class Patient {
         return "";
     }
 
+    public int getPatientSystolic(){
+        for (Scan sc:scans){
+            if (sc instanceof BPScan){
+                return ((BPScan) sc).getSystolic();
+            }
+        }
+        return 0;
+    }
+    public int getPatientDiastolic(){
+        for (Scan sc:scans){
+            if (sc instanceof BPScan){
+                return ((BPScan) sc).getDiastolic();
+            }
+        }
+        return 0;
+    }
+
+
     public void getAdminView() {
         for (Scan sc : scans) {
             if (sc instanceof MRIScan){

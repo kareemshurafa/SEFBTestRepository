@@ -87,10 +87,8 @@ public class Main {
 
         displayPanel.add(label3);
         displayPanel.add(label4);
-        JLabel MRILabel2;
 
-        JLabel BPLabel1;
-        JLabel BPLabel2;
+
 
         frame.setContentPane(displayPanel);
         frame.setVisible(true);

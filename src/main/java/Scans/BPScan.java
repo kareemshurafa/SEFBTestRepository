@@ -22,4 +22,12 @@ public class BPScan extends Scan{
     public String getDuration(){
         return this.duration;
     }
+
+    public int getSystolic(){
+        return this.systolic;
+    }
+
+    public int getDiastolic(){
+        return this.diastolic;
+    }
 }
