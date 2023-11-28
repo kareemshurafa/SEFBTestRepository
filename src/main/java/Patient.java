@@ -27,25 +27,20 @@ public class Patient {
         scans.add(scan);
     }
 
-    public void getAdminView(){
-        for (Scan sc:scans){
-            System.out.println("Patient: "+ this.name + ": MRI: "+ sc.getFieldStrength() + " Tesla, "
-                    + sc.getScanDate() + ": BP: " + sc.getDuration() + ", "+ sc.getScanDate());
-        }
-
-    public void getDoctorView(){
-            JLabel label = new JLabel();
-            URL imageURL=null;
-            try {
-                imageURL = new URL(this.pictureURL);
+    public void getAdminView() {
+        for (Scan sc : scans) {
+            if (sc instanceof MRIScan){
+                System.out.println("Patient: " + this.name + ": MRI: " + sc.getFieldStrength() + " Tesla, "
+                        + sc.getScanDate());
             }
-            catch (MalformedURLException e){
-                System.out.println(e.getMessage());
+            else if (sc instanceof BPScan){
+                System.out.println("Patient: " + this.name + ": BP: " + sc.getDuration() + ", " + sc.getScanDate());
             }
-            ImageIcon thisImageIcon = new ImageIcon(imageURL);
-            label.setIcon(thisImageIcon);
         }
 
     }
 
+    public String getPictureURL(){
+        return this.pictureURL;
+    }
 }

@@ -28,13 +28,24 @@ public class Main {
         JPanel displayPanel = new JPanel();
 
 
+        JLabel label = new JLabel();
+        URL imageURL= null;
+        try {
+            imageURL = new URL(patient1.getPictureURL());
+        }
+        catch (MalformedURLException e){
+            System.out.println(e.getMessage());
+        }
+        ImageIcon thisImageIcon = new ImageIcon(imageURL);
+        label.setIcon(thisImageIcon);
+
+
 
 
 
         // Admin view
         patient1.getAdminView();
         patient2.getAdminView();
-
 
 
 
